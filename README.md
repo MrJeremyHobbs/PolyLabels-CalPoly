@@ -3,23 +3,26 @@
 # PolyLabels
 PolyLabels is for printing spine and pocket labels in Alma on dot matrix printers.
 
-## How it Works
-When the user scans the barcode of an item-in-hand, an Alma API call is made to gather information to generate a spine and pocket label based on local configurations.
+## Requirements
+PolyLabels requires Perl 5, version 24 or later.
+
+Once this is installed, you can run the install.bat file in the setup folder to install all needed dependecies from cpanm.
+
+## API Key
+PolyLabels requires an API key with the following permissions: BIBS read.
 
 ## Notes
 There are different version of PolyLabels installed on different workstations. Each version is slightly modified to fit the needs of standing orders printing, SCA printing, etc.
 
 My goal was to combine these different versions into a single stream-lined version, rewritten in Python using an OOP style, but I wasn't able to finish this before moving on.
 
-If you are interested in taking up the task of creating a unified program, the best place to start is with the version I've shared on the general PolyLabels repository--version 1.7. You can find there [here]([https://github.com/MrJeremyHobbs/PolyLabels](https://github.com/MrJeremyHobbs/PolyLabels)).
+If you are interested in taking up the task of creating a unified program, the best place to start is with the version I've shared on the general PolyLabels repository--version 1.7. You can find there [here]([https://github.com/MrJeremyHobbs/PolyLabels](https://github.com/MrJeremyHobbs/PolyLabels).
 
 If maintaining PolyLabels proves unsustainable, there is also the option that most campuses use, which is [Spine-O-Matic](https://github.com/BCLibraries/SpineOMatic) (though the author of this program has since retired and the program is not in active development).
 
-### Perl
-PolyLabels requires Perl 5, version 24 or later.
 
-### API Key
-PolyLabels requires an API key with the following permissions: BIBS read.
+## How it Works
+When the user scans the barcode of an item-in-hand, an Alma API call is made to gather information to generate a spine and pocket label based on local configurations.
 
 ### Config.ini
 This file contains the printer configurations that tell the dot matrix printer how long, short, wide, etc. the labels are.
